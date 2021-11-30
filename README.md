@@ -1,4 +1,4 @@
-#　概要  
+# 概要  
 [Zenn | 【AWS】EventBridgeを使って毎日の課金額をSlackに通知する](https://zenn.dev/nekoniki/articles/47d41bf2f9f81d)で紹介したコードです。
 `Slack`の`Bot`を用いて特定のチャンネルに任意の`AWS`の日次の利用料金を投稿します。
 
