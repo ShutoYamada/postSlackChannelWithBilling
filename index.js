@@ -10,8 +10,8 @@ exports.handler = async (event) => {
     yesterday.setDate(yesterday.getDate() - 1);
     
     // YYYY-MM-DD形式でstartとendを作成
-    const start = `${yesterday.getFullYear()}-${yesterday.getMonth() + 1}-${yesterday.getDate()}`;
-    const end = `${today.getFullYear()}-${today.getMonth()+1}-${today.getDate()}`;
+    const start = `${yesterday.getFullYear()}-${('0' + (yesterday.getMonth() + 1)).slice(-2)}-${('0' + yesterday.getDate()).slice(-2)}`;
+    const end = `${today.getFullYear()}-${('0' + (today.getMonth() + 1)).slice(-2)}-${('0' + today.getDate()).slice(-2)}`;
     
 
     // CEに投げるパラメータ
